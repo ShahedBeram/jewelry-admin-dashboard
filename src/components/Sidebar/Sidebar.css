@@ -1,0 +1,137 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  color: white;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.user-profile {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 15px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.user-profile p {
+  font-size: 13px;
+  color: #bdc3c7;
+  margin-bottom: 15px;
+}
+
+.user-profile strong {
+  color: white;
+  display: block;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.switch-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.switch-controls button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.active-btn {
+  background-color: var(--accent-color);
+  color: #2c3e50;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.inactive-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #95a5a6;
+}
+
+.inactive-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding-left: 25px;
+}
+
+nav a.active {
+  background-color: var(--accent-color);
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.user-profile.is-admin {
+  border-left: 4px solid var(--accent-color);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.user-profile.is-user {
+  border-left: 4px solid #95a5a6;
+  background: rgba(149, 165, 166, 0.1);
+}
+
+.role-text {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #27ae60;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 0 5px #27ae60;
+}

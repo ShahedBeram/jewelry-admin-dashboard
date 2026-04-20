@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #d4af37;
+  --bg-color: #f4f7f6;
+  --text-dark: #333;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+}
