@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jewelry-admin-dashboard/static/css/main.5eb3e117.css",
+    "main.js": "/jewelry-admin-dashboard/static/js/main.768aab0f.js",
+    "static/media/photo4.png": "/jewelry-admin-dashboard/static/media/photo4.63b44f324e2f375f581a.png",
+    "static/media/photo3.png": "/jewelry-admin-dashboard/static/media/photo3.e93f5b368d9a3eb3f0b3.png",
+    "static/media/photo1.png": "/jewelry-admin-dashboard/static/media/photo1.7e18685ab77c9badb3fb.png",
+    "static/media/photo2.png": "/jewelry-admin-dashboard/static/media/photo2.e3de3804b07cb174cad3.png",
+    "index.html": "/jewelry-admin-dashboard/index.html",
+    "main.5eb3e117.css.map": "/jewelry-admin-dashboard/static/css/main.5eb3e117.css.map",
+    "main.768aab0f.js.map": "/jewelry-admin-dashboard/static/js/main.768aab0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eb3e117.css",
+    "static/js/main.768aab0f.js"
+  ]
+}
