@@ -29,6 +29,12 @@ const Dashboard = () => {
     ],
   };
 
+  // 1. إضافة إعدادات التجاوب وإجبار الرسم على ملء الحاوية
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false, // تسمح للرسم البياني بأخذ طول الحاوية المكتوب في الـ CSS دون تشوه
+  };
+
   return (
     <div className="dashboard-container">
       <h1>Store Overview</h1>
@@ -50,7 +56,10 @@ const Dashboard = () => {
 
       <div className="chart-section">
         <h3>Monthly Sales Performance</h3>
-        <Line data={data} />
+        {/* 2. نمرر الـ options هنا داخل حاوية ذات ارتفاع ثابت */}
+        <div className="chart-wrapper">
+          <Line data={data} options={options} />
+        </div>
       </div>
     </div>
   );

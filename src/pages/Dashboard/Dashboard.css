@@ -1,16 +1,28 @@
+/* تنسيق الحاوية الرئيسية للداشبورد */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
 .dashboard-container h1 {
   margin-bottom: 30px;
   color: var(--primary-color);
 }
 
+/* تنسيق شبكة الكاردات البيضاء (تم فصل الكاردات) */
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 20px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .stat-card {
+  flex: 1; /* الكاردات تأخذ مساحة متساوية */
   background: white;
   padding: 25px;
   border-radius: 15px;
@@ -36,31 +48,47 @@
   color: var(--primary-color);
 }
 
+/* تنسيق حاوية الرسم البياني */
 .chart-section {
   background: white;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 60px;
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.chart-section h3 {
+  margin-bottom: 20px;
 }
 
+/* الكود الذي يمنع اختفاء الرسم البياني (تم دمجه) */
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+/* تعديل خلفية الـ Sidebar (تم توحيد اللون) */
+.jewelry-admin-panel-sidebar {
+  background-color: #1a2a44; /* لون أزرق داكن متناسق */
+}
 
 @media (max-width: 480px) {
   .stats-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
   }
-  
+
   .stat-card p {
     font-size: 22px;
   }
-  
+
   .chart-section {
     padding: 15px;
-    overflow-x: auto; 
+    overflow-x: auto;
+  }
+
+  .chart-wrapper {
+    height: 300px;
   }
 }
